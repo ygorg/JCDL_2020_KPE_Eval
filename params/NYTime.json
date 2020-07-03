@@ -1,0 +1,17 @@
+{
+    "dataset_identifier": "NYTime",
+    "path": "datasets/NYTime/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "en",
+    "reference": "datasets/NYTime/references/train.author.stem.json",
+    "output": "output/NYTime/",
+    "nbest": 100,
+    "models": ["EmbedRank", "FirstPhrases", "TextRank", "TopicRank", "PositionRank", "MultipartiteRank", "Kea", "TfIdf"],
+    "kea_model": "output/NYTime/NYTime.train.kea.pickle",
+    "kea_df_weights": "output/NYTime/NYTime.train.df.tsv.gz",
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<ADJ>*<NOUN|PROPN>+}",
+    "pos": ["NOUN", "PROPN", "ADJ"]
+}

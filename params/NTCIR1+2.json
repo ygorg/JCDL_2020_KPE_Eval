@@ -1,0 +1,17 @@
+{
+    "dataset_identifier": "NTCIR1+2",
+    "path": "datasets/NTCIR1+2/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "en",
+    "reference": "datasets/NTCIR1+2/references/test.reader.stem.json",
+    "output": "output/NTCIR1+2/",
+    "nbest": 50,
+    "models": ["TopicRank", "PositionRank", "MultipartiteRank"],
+    "kea_model": "output/KP20k/KP20k.train.kea.pickle",
+    "kea_df_weights": "output/KP20k/KP20k.train.df.tsv.gz",
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<ADJ>*<NOUN|PROPN>+}",
+    "pos": ["NOUN", "PROPN", "ADJ"]
+}

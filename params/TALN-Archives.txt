@@ -1,0 +1,17 @@
+{
+    "dataset_identifier": "TALN-Archives",
+    "path": "datasets/TALN-Archives/",
+    "format": "corenlp",
+    "extension": "xml",
+    "use_lemmas": false,
+    "language": "french",
+    "stemmer": "french",
+    "reference": "datasets/TALN-Archives/references/test.author.stem.json",
+    "output": "output/TALN-Archives/",
+    "nbest": 100,
+    "models": ["TopicRank", "MultipartiteRank", "TfIdf", "YAKE", "PositionRank", "TopicalPageRank", "ExpandRank", "TextRank", "StupidKE"],
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<NOUN|PROPN|NPP|N|NC>+<ADJ>*}",
+    "pos" : ["ADJ", "NOUN", "PROPN", "N", "NPP", "NC"]
+}

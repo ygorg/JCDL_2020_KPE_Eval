@@ -1,0 +1,15 @@
+{
+    "dataset_identifier": "KP20k",
+    "path": "datasets/KP20k/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "en",
+    "reference": "datasets/KP20k/references/train.author.stem.json",
+    "output": "output/KP20k/",
+    "nbest": 100,
+    "models": ["FirstPhrases", "TopicRank", "TfIdf", "PositionRank", "MultipartiteRank", "Kea"],
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<ADJ>*<NOUN|PROPN>+}",
+    "pos": ["NOUN", "PROPN", "ADJ"]
+}

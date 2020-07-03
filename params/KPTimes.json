@@ -1,0 +1,18 @@
+{
+    "dataset_identifier": "KPTimes",
+    "path": "datasets/KPTimes/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "en",
+    "reference": "datasets/KPTimes/references/train.editor.stem.json",
+    "output": "output/KPTimes/",
+    "nbest": 100,
+    "models": ["TextRank", "TfIdf", "Kea", "EmbedRank", "FirstPhrases", "PositionRank", "MultipartiteRank",
+               "KeaOneModel"],
+    "kea_model": "output/KPTimes/KPTimes.train.kea.pickle",
+    "kea_df_weights": "output/KPTimes/KPTimes.train.df.tsv.gz",
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<ADJ>*<NOUN|PROPN>+}",
+    "pos": ["NOUN", "PROPN", "ADJ"]
+}

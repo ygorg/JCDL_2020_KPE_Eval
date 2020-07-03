@@ -1,0 +1,15 @@
+{
+    "dataset_identifier": "110-PT-BN-KP",
+    "path": "datasets/110-PT-BN-KP/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "pt",
+    "reference": "datasets/110-PT-BN-KP/references/train.reader.stem.json",
+    "output": "output/110-PT-BN-KP/",
+    "nbest": 100,
+    "models": ["FirstPhrases", "TopicRank", "TfIdf", "PositionRank", "MultipartiteRank", "Kea", "TopicCoRank"],
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<NOUN|PROPN>+<ADJ>*}",
+    "pos" : ["ADJ", "NOUN", "PROPN"]
+}

@@ -1,0 +1,15 @@
+{
+    "dataset_identifier": "WikinewsKeyphrase",
+    "path": "datasets/WikinewsKeyphrase/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "fr",
+    "reference": "datasets/WikinewsKeyphrase/references/test.reader.stem.json",
+    "output": "output/WikinewsKeyphrase/",
+    "nbest": 100,
+    "models": ["FirstPhrases", "TopicRank", "TfIdf", "PositionRank", "MultipartiteRank", "Kea", "TopicCoRank"],
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<NOUN|PROPN>+<ADJ>*}",
+    "pos" : ["ADJ", "NOUN", "PROPN"]
+}

@@ -1,0 +1,17 @@
+{
+    "dataset_identifier": "PubMed",
+    "path": "datasets/PubMed/",
+    "extension": "xml",
+    "normalization": "stemming",
+    "language": "en",
+    "reference": "datasets/PubMed/references/test.author.stem.json",
+    "output": "output/PubMed/",
+    "nbest": 100,
+    "models": ["FirstPhrases", "TopicRank", "TfIdf", "PositionRank", "MultipartiteRank", "Kea", "TopicCoRank", "KeaOneModel"],
+    "kea_model": "output/KP20k/KP20k.train.kea.pickle",
+    "kea_df_weights": "output/KP20k/KP20k.train.df.tsv.gz",
+    "n_topics": 500,
+    "n_expanded": 5,
+    "grammar": "NP: {<ADJ>*<NOUN|PROPN>+}",
+    "pos": ["NOUN", "PROPN", "ADJ"]
+}
