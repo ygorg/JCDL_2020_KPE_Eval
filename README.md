@@ -2,6 +2,8 @@
 
 This repository holds the code necessary to reproduce results from the paper "Large-Scale Evaluation of Keyphrase Extraction Models" accepted at JCDL2020.
 
+This table shows the f-score @ top 10 (F@10).
+
 | model            | PubMed | ACM | SemEval-2010 | Inspec | WWW | KP20k | DUC-2001 | 500N-KPCrowd | KPTimes | NYTime |
 |:-----------------|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|-------:|
 | FirstPhrases     |   15.4 |   13.6 |   13.8 |   29.3 |   10.2 |   13.5 |   24.6 |   17.1 |   11.4 |    9.2 |
